@@ -1,0 +1,12 @@
+.projects-section-container {
+  background-image: linear-gradient(to bottom, black, transparent 15%);
+  background-color: var(--color-5);
+  color: white;
+  height: fit-content;
+}
+  
+.main-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}

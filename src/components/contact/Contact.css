@@ -1,0 +1,51 @@
+.contact-section-container {
+  background-color: black;
+  background-image: linear-gradient(to bottom, var(--color-5), black 10%);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.email-link {
+  border: 1px solid var(--color-2);
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  color: var(--color-2);
+  cursor: pointer;
+  border-radius: 15px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+footer ul a {
+  color: white;
+}
+
+footer ul li {
+  transition: 0.5s;
+}
+
+footer ul li:hover {
+  transform: scale(1.2);
+  rotate: 360deg;
+}

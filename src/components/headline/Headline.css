@@ -1,0 +1,57 @@
+.headline-section-container {
+  background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile2.jpg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Text information */
+
+.headline-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.headline-information p:nth-child(1) {
+  color: var(--color-2);
+}
+
+.headline-information p:nth-child(2) {
+  color: var(--color-1);
+  font-size: 2.5rem;
+}
+
+.headline-information p:nth-child(3) {
+  color: var(--color-7);
+  font-size: 1.5rem;
+}
+
+.headline-information p:nth-child(4) {
+  color: var(--color-7);
+}
+
+.headline-information a {
+  font-weight: 700;
+  color: var(--color-2);
+  text-decoration: none;
+}
+
+/* Contact me button */
+
+.headline-information button {
+  border: 1px solid var(--color-2);
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  color: var(--color-2);
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+.dark-phone {
+  height: 15rem;
+}

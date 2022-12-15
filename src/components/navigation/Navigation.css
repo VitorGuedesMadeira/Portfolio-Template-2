@@ -1,0 +1,76 @@
+nav {
+  position: fixed;
+  display: flex;
+  background-image: linear-gradient(to bottom, black, black, transparent);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 3rem;
+  width: 375px;
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hamburger-menu > div {
+  background-color: white;
+  height: 2px;
+  width: 15px;
+  border-radius: 5rem;
+  transition: 0.5s;
+}
+
+.hamburger-menu.on div:nth-child(1) {
+  rotate: -45deg;
+}
+
+.hamburger-menu.on div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.on div:nth-child(3) {
+  rotate: 45deg;
+}
+
+.navigation-list {
+  display: none;
+}
+
+.navigation-list li {
+  cursor: pointer;
+}
+
+.navigation-list.on {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  background-image: linear-gradient(to right, black 90%, transparent);
+  height: 100vh;
+  animation: hamburger-slide 0.5s ease-out;
+}
+
+@keyframes hamburger-slide {
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

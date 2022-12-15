@@ -1,0 +1,38 @@
+.about-section-container {
+  color: white;
+  background-color: var(--color-5);
+  background-image:  linear-gradient(to top, black, transparent);
+}
+
+.about-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-title span {
+  font-size: 2rem;
+}
+
+.about-information p {
+  color: var(--color-7);
+}
+
+.about-information a {
+  font-weight: 700;
+  color: var(--color-2);
+  text-decoration: none;
+}
+
+.about-information ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+.about-information ul li {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-3);
+  font-size: 0.75rem;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+@import url('https://fonts.cdnfonts.com/css/calibre');
+
+:root {
+  /* colors */
+  --color-1: #ebe3d9;
+  --color-2: #7d9fe4;
+  --color-3: #636bbf;
+  --color-4: #454998;
+  --color-5: #05041f;
+  --color-6: #03020b;
+  --color-7: #8a8ea7;
+
+  /* colors */
+  --box-shadow-1: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  --box-shadow-2: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  --box-shadow-3: 10px 10px 25px rgba(0, 0, 0, 0.4);
+
+  /* fonts */
+  --font-1: 'Roboto', sans-serif;
+  --font-2: 'Calibre', sans-serif;
+  --font-3: 'SF Mono', sans-serif;
+}
+
+body {
+ width: 375px;
+ background-color: #7d9fe4;
+ font-family: var(--font-2);
+}
+
+main {
+  background-color: snow;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  padding-top: 5rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(63, 72, 106);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-4);
+  border-radius: 10px;
+}
