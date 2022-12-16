@@ -1,10 +1,10 @@
 .headline-section-container {
   background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile2.jpg);
   background-size: cover;
+  background-position: center center;
   color: white;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* Text information */
@@ -12,20 +12,23 @@
 .headline-information {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.25rem;
+  max-width: calc(100% / 2);
 }
 
 .headline-information p:nth-child(1) {
   color: var(--color-2);
+  font-weight: 700;
 }
 
 .headline-information p:nth-child(2) {
   color: var(--color-1);
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .headline-information p:nth-child(3) {
-  color: var(--color-7);
+  color: var(--color-2);
   font-size: 1.5rem;
 }
 
@@ -42,16 +45,32 @@
 /* Contact me button */
 
 .headline-information button {
-  border: 1px solid var(--color-2);
+  border: 1px solid goldenrod;
   background-color: transparent;
   padding: 0.5rem 1rem;
-  color: var(--color-2);
+  color: goldenrod;
   cursor: pointer;
   outline: none;
   border-radius: 15px;
   width: fit-content;
 }
 
-.dark-phone {
-  height: 15rem;
+@media (min-width: 480px) {
+  .headline-section-container {
+    background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile3.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .headline-section-container {
+    background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
+    font-size: 120%;
+    align-items: center;
+  }  
+}
+
+@media (min-width: 1024px) {
+  .headline-section-container {
+    font-size: 140%;
+  }
 }

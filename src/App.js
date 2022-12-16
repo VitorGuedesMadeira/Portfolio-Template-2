@@ -6,7 +6,6 @@ import About from './components/about/About';
 import Microverse from './components/microverse/Microverse';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
-import Slider from './components/Slider/Slider';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Microverse />
         <Projects />
         <Contact />
-        <Slider />
       </main>
 
       <div className="noise" />

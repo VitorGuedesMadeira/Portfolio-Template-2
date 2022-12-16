@@ -1,11 +1,54 @@
 .project-container {
-  background-color: #6f23ff;
-  border-radius: 5px;
+  border-radius: 1.5rem;
   width: 100%;
-  aspect-ratio: 1 / 1;
   position: relative;
   cursor: pointer;
   box-shadow: 0 10px 20px black;
+  color: var(--color-7);
+  background-image: linear-gradient(var(--color-5), black);
+}
+
+.project-title {
+  border: 1px solid #6f23ff;
+  background-image: linear-gradient(#6f23ff40, #7023ff40, #ab8ce640);
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  text-align: center;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.project-information {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-image: linear-gradient(#7023ff15, #7023ff15, #ab8ce615);
+  border-radius: 5px;
+}
+
+.project-skills {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-skills li {
+  padding: 0.5rem;
+  border: 1px solid goldenrod;
+  border-radius: 0.25rem;
+  color: goldenrod;
+  background-color: rgba(218, 165, 32, 0.1);
+  padding-bottom: 0.25rem;
+}
+
+.project-skills li:hover {
+  background-color: rgba(218, 165, 32, 0.3);
 }
 
 .project-image {
@@ -14,27 +57,21 @@
   border-radius: 5px;
 }
 
-.project-icon {
-	background-color: #6f23ff; /*for compatibility with older browsers*/
-	background-image: linear-gradient(#6f23ff, #6f23ff, #ab8ce6);
-	text-decoration: none;
+.see-project {
+  border: 1px solid #6f23ff;
+  background-image: linear-gradient(#6f23ff74, #7023ff74, #ab8ce674);
 	color: #fff;
-	font-size: 25px;
 	font-family: sans-serif;
-	font-weight: 100;
-  position: absolute;
-  right: -1rem;
-  bottom: 2rem;
-  font-size: 4rem;
-  padding: 1rem;
-  border-radius: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
   transition: 0.5s;
-  box-shadow: 0px 1px 4px -2px #333;
-  text-shadow: 0px -1px #333;
-  animation: play-project 1s infinite ease-in-out
+  text-align: center;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
-.project-icon:hover {
+.project-icon:hover,
+.github-project:hover {
   transform: scale(1.1);
 }
 
@@ -51,7 +88,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
-  width: 375px;
+  width: 100%;
   cursor: pointer;
   backdrop-filter: blur(10px);
   z-index: 10;
@@ -60,7 +97,7 @@
 }
 
 .project-modal {
-  width: 100%;
+  width: 300px;
   aspect-ratio: 1 / 1;
   border-radius: 1rem;
   background-color: #6f23ff;
@@ -69,15 +106,15 @@
 
 @keyframes play-project {
   0% {
-    rotate: 0;
+    transform: translate3d(0, 0, 0);
   }
 
   50% {
-    rotate: 5deg;
+    transform: translate3d(-1px, 0, 0);
   }
 
   100% {
-    rotate: 0;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -88,5 +125,20 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@media (min-width: 480px) {
+  .project-container {
+    width: calc((100% / 2) - 2.5rem);
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .project-container {
+    width: calc((100% / 3) - 4rem);
   }
 }

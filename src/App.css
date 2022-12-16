@@ -5,12 +5,12 @@
 :root {
   /* colors */
   --color-1: #ebe3d9;
-  --color-2: #7d9fe4;
-  --color-3: #636bbf;
+  --color-2: #6392f0;
+  --color-3: #7e85d5;
   --color-4: #454998;
   --color-5: #05041f;
   --color-6: #03020b;
-  --color-7: #8a8ea7;
+  --color-7: #acafc2;
 
   /* colors */
   --box-shadow-1: 3px 3px 10px rgba(0, 0, 0, 0.4);
@@ -24,14 +24,11 @@
 }
 
 body {
- width: 375px;
  background-color: #7d9fe4;
  font-family: var(--font-2);
 }
 
 main {
-  background-color: snow;
-  height: 100%;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
@@ -43,6 +40,7 @@ section {
   height: 100vh;
   scroll-snap-align: start;
   padding-top: 5rem;
+  overflow: hidden;
 }
 
 /* width */
@@ -61,4 +59,19 @@ section {
 ::-webkit-scrollbar-thumb {
   background: var(--color-4);
   border-radius: 10px;
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 5rem 10rem;
+  }
 }

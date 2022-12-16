@@ -8,7 +8,7 @@
 }
 
 .small-arrow-icon {
-  color: var(--color-2);
+  color: goldenrod;
 }
 
 .noise {
@@ -20,4 +20,9 @@
   background-image: url(./assets/gifs/noise.gif);
   opacity: 0.04;
   pointer-events: none;
+}
+
+.flex-row {
+  display: flex;
+  gap: 2rem;
 }

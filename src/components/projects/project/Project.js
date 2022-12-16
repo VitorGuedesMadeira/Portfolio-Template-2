@@ -1,5 +1,4 @@
 import './Project.css';
-import { FaPlay } from "react-icons/fa";
 import { useState } from 'react';
 
 const Project = (props) => {
@@ -18,8 +17,17 @@ const Project = (props) => {
         </div>
 
         <div onClick={toggleClass} className="project-container">
-          <img className="project-image" src={props.image} alt="project" />
-          <FaPlay className="project-icon" />
+          <h2 className="project-title">{props.project.title}</h2>
+          <div className="project-information">
+            <p>{props.project.description}</p>
+            <ul className="project-skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <img className="project-image" src={props.project.image} alt="project" />
+          <p className="see-project">Open Project</p>
         </div>
         </>
     );

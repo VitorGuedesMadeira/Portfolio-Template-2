@@ -6,9 +6,14 @@ nav {
   align-items: center;
   color: white;
   height: 3rem;
-  width: 375px;
+  width: 100%;
+  left: -5px;
   padding: 0 2rem;
   z-index: 1;
+}
+
+.contact-info {
+  display: none;
 }
 
 .hamburger-menu {
@@ -42,7 +47,9 @@ nav {
   display: none;
 }
 
-.navigation-list li {
+.navigation-list a {
+  text-decoration: none;
+  color: white;
   cursor: pointer;
 }
 
@@ -58,9 +65,9 @@ nav {
   top: 0;
   left: 0;
   width: 300px;
-  background-image: linear-gradient(to right, black 90%, transparent);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95) 95%, transparent);
   height: 100vh;
-  animation: hamburger-slide 0.5s ease-out;
+  animation: hamburger-slide 0.5s ease-in-out;
 }
 
 @keyframes hamburger-slide {
@@ -72,5 +79,30 @@ nav {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  nav {
+    font-size: 120%;
+    padding: 2rem 8rem;
+    background-image: linear-gradient(to bottom, black, black, black, transparent);
+  }
+
+  .contact-info {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding: 2rem 10rem;
+    font-size: 140%;
   }
 }

@@ -3,10 +3,33 @@
   background-color: var(--color-5);
   color: white;
   height: fit-content;
+  padding-bottom: 10rem;
+  
 }
   
+.projects-flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .main-projects {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+}
+
+@media (min-width: 480px) {
+  .main-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
 }

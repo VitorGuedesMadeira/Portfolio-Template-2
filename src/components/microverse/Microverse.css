@@ -4,7 +4,7 @@
   background-size: cover;
   position: relative;
   color: white;
-  text-align: end;
+  display: flex;
 }
 
 .microverse-logo {
@@ -20,6 +20,7 @@
     0 0 75px #6f23ff,
     0 0 125px #6f23ff;
   animation: microverse 4s infinite ease-in-out;
+  z-index: 2;
 }
 
 .hand {
@@ -27,19 +28,36 @@
   left: 0;
   bottom: 1rem;
   width: 15rem;
+  z-index: 1;
+}
+
+.vscode1 {
+  position: absolute;
+  right: -1rem;
+  bottom: 1rem;
+  width: 15rem;
+  z-index: 0;
+  opacity: 0.15;
 }
 
 .microverse-information {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  max-width: calc(100% / 2);
 }
 
 .microverse-title span {
   font-size: 2rem;
 }
 
-.microverse-information p {
+.microverse-date {
+  color: goldenrod;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.microverse-description {
   color: var(--color-7);
 }
 
@@ -47,12 +65,6 @@
   font-weight: 700;
   color: var(--color-2);
   text-decoration: none;
-}
-
-.microverse-title p {
-  font-family: var(--font-3);
-  color: var(--color-2);
-  font-size: 0.75rem;
 }
 
 @keyframes microverse {
@@ -93,5 +105,50 @@
   100% {
     rotate: 0;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  .microverse-section-container {
+    font-size: 120%;
+    align-items: center;
+  }
+
+  .microverse-logo {
+    bottom: 12rem;
+    left: unset;
+    right: 4rem;
+    width: 7rem;
+  }
+
+  .hand {
+    left: unset;
+    right: 0;
+    bottom: 1rem;
+    width: 15rem;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}
+
+@media (min-width: 1024px) {
+  .microverse-section-container {
+    font-size: 140%;
+  }
+
+  .microverse-logo {
+    bottom: 20rem;
+    right: 10rem;
+    width: 7rem;
+  }
+
+  .hand {
+    bottom: 1rem;
+    width: 25rem;
   }
 }
