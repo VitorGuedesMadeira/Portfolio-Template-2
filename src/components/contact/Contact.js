@@ -12,7 +12,7 @@ const Contact = () => {
             <span>Get In Touch</span>
           </div>
           <p>If you want to work together on a project or just have a chat, please don't hesitate to contact me via email below.</p>
-          <a class="email-link" href="mailto:vgm_rox@hotmail.com" target="_blank" rel="noreferrer">Say Hello</a>
+          <a class="email-link" href="mailto:vgm_rox@hotmail.com" target="_blank">Say Hello</a>
         </div>
         <div className="relative">
           <img className="dark-phone" src={darkiphone1} alt="iPhone" />

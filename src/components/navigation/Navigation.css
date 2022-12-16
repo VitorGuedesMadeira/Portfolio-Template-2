@@ -98,11 +98,139 @@ nav {
     align-items: center;
     font-size: 60%;
   }
+
+  .contact-info span {
+    padding-top: 0.4rem;
+  }
+
+  .hamburger-menu.on div:nth-child(1) {
+    rotate: 45deg;
+  }
+  
+  .hamburger-menu.on div:nth-child(3) {
+    rotate: -45deg;
+  }
+
+  .navigation-list.on {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 5rem;
+    left: unset;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background-image: unset;
+    pointer-events: none;
+    animation: unset;
+  }
+
+  .navigation-list.on li {
+    width: 100%;
+    padding: 0.5rem;
+    background-image: linear-gradient(to left, black, black, black, black, rgba(0, 0, 0, 0.7), transparent);
+    text-align: center;
+    transition: 0.5s;
+    position: relative
+  }
+
+  .navigation-list.on li:hover a {
+    color: goldenrod;
+  }
+
+  .navigation-list.on li:nth-child(1) {
+    pointer-events: visible;
+    animation: hamburger-slide-right-1 0.5s;
+  }
+
+  .navigation-list.on li:nth-child(2) {
+    pointer-events: visible;
+    animation: hamburger-slide-right-2 0.5s;
+
+  }
+
+  .navigation-list.on li:nth-child(3) {
+    pointer-events: visible;
+    animation: hamburger-slide-right-3 0.5s;
+  }
+
+  .navigation-list.on li:nth-child(4) {
+    pointer-events: visible;
+    animation: hamburger-slide-right-4 0.5s;
+  }
 }
 
 @media (min-width: 1024px) {
   nav {
     padding: 2rem 10rem;
     font-size: 140%;
+  }
+}
+
+@keyframes hamburger-slide-right-1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hamburger-slide-right-2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  25% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hamburger-slide-right-3 {
+  0% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hamburger-slide-right-4 {
+  0% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  75% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }

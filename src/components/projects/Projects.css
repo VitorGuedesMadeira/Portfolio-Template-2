@@ -1,5 +1,6 @@
 .projects-section-container {
-  background-image: linear-gradient(to bottom, black, transparent 15%);
+  background-image: url(../../assets/images/texture1.png), linear-gradient(to bottom, black, transparent 15%);
+  background-size: 25%, cover;
   background-color: var(--color-5);
   color: white;
   height: fit-content;

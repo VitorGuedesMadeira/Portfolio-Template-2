@@ -26,7 +26,9 @@ const Project = (props) => {
               <li>JavaScript</li>
             </ul>
           </div>
-          <img className="project-image" src={props.project.image} alt="project" />
+          <div className="project-image-div">
+            <img className="project-image" src={props.project.image} alt="project" />
+          </div>
           <p className="see-project">Open Project</p>
         </div>
         </>

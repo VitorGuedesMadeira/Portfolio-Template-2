@@ -36,7 +36,7 @@
 .about-information ul li {
   display: flex;
   align-items: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 480px) {

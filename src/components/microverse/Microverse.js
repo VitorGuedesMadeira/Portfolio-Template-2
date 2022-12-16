@@ -10,14 +10,16 @@ const Microverse = () => {
         <div className="microverse-information">
           <div className="microverse-title">
             <FaLocationArrow className="arrow-icon" />
-            <span>Knowledge</span>
-            <p className="microverse-date">2022 - 2023</p>
+            <span>Education</span>
+            <p className="microverse-date">Microverse - 2022/2023</p>
           </div>
-          <p className="microverse-description">Hello! My name is Vitor and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about <a href="https://us.mullenlowe.com/" target="_blank" rel="noreferrer">HTML</a> & <a href="https://us.mullenlowe.com/" target="_blank" rel="noreferrer">CSS</a>!</p>
+          <p className="microverse-description">Spent 1300+ hours mastering algorithms, data structures, and full-stack development while simultaneously developing projects with Ruby, Rails, JavaScript, React, and Redux.</p>
+          <p className="microverse-description">Developed skills in remote pair-programming using GitHub, industry-standard gitflow, and daily standups to communicate and collaborate with international remote developers.</p>
+          <p className="microverse-description">Built 50+ projects ranging from simple projects to complex full-stack applications.</p>
         </div>
-        <img className="microverse-logo" src={microverseLogo} alt="microverse-logo" />
-        <img className="hand" src={hand} alt="hand" />
         <img className="vscode1" src={vscode1} alt="vscode1" />
+        <img className="hand" src={hand} alt="hand" />
+        <img className="microverse-logo" src={microverseLogo} alt="microverse-logo" />
       </section>
     );
   };

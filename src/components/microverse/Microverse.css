@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  max-width: calc(100% / 2);
+  max-width: 25rem;
 }
 
 .microverse-title span {
@@ -117,11 +117,16 @@
     align-items: center;
   }
 
+  .microverse-information {
+    max-width: calc(100% / 2);
+  }
+
   .microverse-logo {
     bottom: 12rem;
     left: unset;
     right: 4rem;
     width: 7rem;
+    z-index: 0;
   }
 
   .hand {
@@ -133,6 +138,7 @@
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    z-index: 0;
   }
 }
 
@@ -151,4 +157,7 @@
     bottom: 1rem;
     width: 25rem;
   }
+}
+
+@media (min-width: 1024px) {
 }

@@ -13,27 +13,32 @@
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  max-width: calc(100% / 2);
+  max-width: 25rem;
 }
 
 .headline-information p:nth-child(1) {
   color: var(--color-2);
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .headline-information p:nth-child(2) {
   color: var(--color-1);
   font-size: 2.5rem;
   font-weight: 700;
+  padding-top: 0.5rem;
 }
 
 .headline-information p:nth-child(3) {
-  color: var(--color-2);
-  font-size: 1.5rem;
+  background: linear-gradient(to right, rgb(67, 67, 163), var(--color-2), var(--color-2));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .headline-information p:nth-child(4) {
   color: var(--color-7);
+  font-weight: 300;
 }
 
 .headline-information a {
@@ -53,6 +58,56 @@
   outline: none;
   border-radius: 15px;
   width: fit-content;
+  margin-top: 1rem;
+}
+
+.headline-information button:hover {
+  background-color: rgba(218, 165, 32, 0.3);
+}
+
+.contact-wrapper {
+  display: none;
+}
+
+.contact-wrapper.on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.7);
+  z-index: 5000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  animation: modal 0.2s ease-in-out;
+}
+
+.contact-button {
+  border: 1px solid #6f23ff;
+  background-image: linear-gradient(#6f23ff74, #7023ff74, #ab8ce674);  width: fit-content;
+  min-width: 9rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  pointer-events: visible;
+}
+
+.contact-button a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 480px) {
@@ -66,7 +121,11 @@
     background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
     font-size: 120%;
     align-items: center;
-  }  
+  }
+
+  .headline-information {
+    max-width: calc(100% / 2);
+  }
 }
 
 @media (min-width: 1024px) {

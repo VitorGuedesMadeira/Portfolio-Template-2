@@ -12,32 +12,32 @@ const Projects = () => {
   const everyProject = [
     {
       title: 'Bookstore',
-      description: 'test',
+      description: 'This is my personal portfolio, where you can find all of my main projects and look for contact adressess. Built with plain HTML, CSS and JavaScript',
       image: image1,
     },
     {
       title: 'Marvel Characters',
-      description: 'test',
+      description: 'This is my personal portfolio, where you can find all of my main projects and look for contact adressess. Built with plain HTML, CSS and JavaScript',
       image: image2,
     },
     {
       title: 'Space Traveler',
-      description: 'test',
+      description: 'This is my personal portfolio, where you can find all of my main projects and look for contact adressess. Built with plain HTML, CSS and JavaScript',
       image: image3,
     },
     {
       title: 'Awesome Books',
-      description: 'test',
+      description: 'This is my personal portfolio, where you can find all of my main projects and look for contact adressess. Built with plain HTML, CSS and JavaScript',
       image: image4,
     },
     {
       title: 'Pokedéx',
-      description: 'test',
+      description: 'This is my personal portfolio, where you can find all of my main projects and look for contact adressess. Built with plain HTML, CSS and JavaScript',
       image: image5,
     },
     {
       title: 'Leaderboard',
-      description: 'test',
+      description: 'This is my personal portfolio, where you can find all of my main projects and look for contact adressess. Built with plain HTML, CSS and JavaScript',
       image: image6,
     },
   ]
@@ -48,6 +48,7 @@ const Projects = () => {
           <div className="about-title">
             <FaLocationArrow className="arrow-icon" />
             <span>Projects</span>
+            <p className="microverse-date">GitHub - Pinned Projects</p>
           </div>
           <div className="main-projects">
             {everyProject.map((project) => 
