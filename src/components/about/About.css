@@ -21,6 +21,10 @@
   color: var(--color-7);
 }
 
+.about-title p {
+  color: goldenrod;
+}
+
 .about-information a {
   font-weight: 700;
   color: var(--color-2);
@@ -29,7 +33,7 @@
 
 .about-information ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
 }
 
@@ -46,6 +50,10 @@
   .about-information {
     max-width: 100%;
     text-align: justify;
+  }
+
+  .about-information ul {
+    column-gap: 2rem;
   }
 
   .about-information ul li span {

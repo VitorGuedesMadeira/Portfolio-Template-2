@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaEnvelope, FaLinkedin, FaInstagram, FaPaperclip } from "react-icons/fa";
+import resume from '../../assets/files/Profile.pdf';
 import './Headline.css';
 
 const Headline = () => {
@@ -15,7 +16,7 @@ const Headline = () => {
           <p>Hi, my name is</p>
           <p>Vitor G. Madeira</p>
           <p>I build things for the web</p>
-          <p>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m looking for a full-stack position. Feel free to check my <a href="https://docs.google.com/document/d/1LbPa1ridPgLK8a7S7N86yOm4bRhlgkTKyYPqqfxeKbI/edit" target="_blank">Resume</a></p>
+          <p>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m looking for a full-stack position. Feel free to check my resume. <a href={resume} download="">Download resume</a></p>
           <button onClick={toggleClass}>Contact me</button>
         </div>
 

@@ -6,6 +6,7 @@ import About from './components/about/About';
 import Microverse from './components/microverse/Microverse';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
+import Testimonials from './components/testimonials/Testimonials';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Microverse />
         <Projects />
+        <Testimonials />
         <Contact />
       </main>
 

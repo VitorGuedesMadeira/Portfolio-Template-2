@@ -1,0 +1,13 @@
+.testimonials-section-container {
+  background-image: url(../../assets/images/texture1.png), linear-gradient(to bottom, var(--color-5), black);
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials-information {
+
+}
+
+.testimonials-title {
+  color: white;
+}

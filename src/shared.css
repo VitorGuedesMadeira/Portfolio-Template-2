@@ -5,6 +5,11 @@
   box-shadow: 0 0 10px var(--color-2);
   border-radius: 3px;
   background-color: var(--color-5);
+  transition: 0.5s;
+}
+
+.arrow-icon:hover {
+  rotate: 135deg;
 }
 
 .small-arrow-icon {
