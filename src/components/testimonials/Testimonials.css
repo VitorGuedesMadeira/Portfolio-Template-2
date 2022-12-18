@@ -11,3 +11,23 @@
 .testimonials-title {
   color: white;
 }
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  .testimonials-section-container {
+    font-size: 120%;
+    justify-content: center;
+  }
+
+  .testimonials-information {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-section-container {
+    font-size: 140%;
+  }
+}

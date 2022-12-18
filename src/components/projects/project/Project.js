@@ -1,35 +1,55 @@
 import './Project.css';
 import { useState } from 'react';
+import { FaWindowClose } from "react-icons/fa";
 
 const Project = (props) => {
-  const [isModalActive, setActive] = useState(false);
+  const [isModalActive, setModalActive] = useState(false);
+  const [isReadMoreActive, setReadMoreActive] = useState(false);
+  const skills = props.project.skills
 
   const toggleClass = () => {
-    setActive(!isModalActive);
+    setModalActive(!isModalActive);
   };
+
+  const toggleReadMore = () => {
+    setReadMoreActive(!isReadMoreActive);
+  }
 
     return (
       <>
-        <div onClick={toggleClass} className={isModalActive ? 'modal on' : 'modal'}>
+        <div className={isModalActive ? 'modal on' : 'modal'}>
           <div className="project-modal">
-            Modal Project
+            <h2 className="project-modal-mobile-title">{props.project.title}</h2>
+            <FaWindowClose className="close-button" onClick={toggleClass} />
+            <img className="project-modal-image" src={props.project.image} alt="project" />
+            <div className="project-modal-information">
+              <h2 className="project-modal-desktop-title">{props.project.title}</h2>
+              <h3>{props.project.subtitle}</h3>
+              <p className={isReadMoreActive ? 'modal-description on' : 'modal-description'}>{props.project.description}</p>
+              <button className="read-more" onClick={toggleReadMore}>Read more</button>
+              <div className="project-modal-buttons">
+                <a href={props.project.live} className="project-modal-button">Live</a>
+                <a href={props.project.github} className="project-modal-button">GitHub</a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div onClick={toggleClass} className="project-container">
           <h2 className="project-title">{props.project.title}</h2>
           <div className="project-information">
-            <p>{props.project.description}</p>
             <ul className="project-skills">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+              {skills.map(element => 
+                <li key={props.project.id}>{element}</li>
+              )}
             </ul>
           </div>
           <div className="project-image-div">
             <img className="project-image" src={props.project.image} alt="project" />
           </div>
-          <p className="see-project">Open Project</p>
+          <div className="see-project">
+            <p>Open Project</p>
+          </div>
         </div>
         </>
     );

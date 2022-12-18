@@ -1,5 +1,5 @@
 .headline-section-container {
-  background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile2.jpg);
+  background-image: linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile2.jpg);
   background-size: cover;
   background-position: center center;
   color: white;
@@ -14,6 +14,10 @@
   flex-direction: column;
   gap: 0.25rem;
   max-width: 25rem;
+}
+
+.headline-icons {
+  display: none;
 }
 
 .headline-information p:nth-child(1) {
@@ -127,6 +131,17 @@
 
   .headline-information {
     max-width: calc(100% / 2);
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .headline-icons {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1rem;
+    color: white;
   }
 }
 
