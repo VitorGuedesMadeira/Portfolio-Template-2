@@ -13,7 +13,8 @@ const Contact = () => {
               <span>Get In Touch</span>
             </div>
             <p>If you want to work together on a project or just have a chat, please don't hesitate to contact me via email below.</p>
-            <a class="email-link" href="mailto:vgm_rox@hotmail.com" target="_blank">Say Hello</a>
+            <a class="email-link" href="mailto:vgm_rox@hotmail.com" target="_blank" loquacious-marshmallow-469259
+>Say Hello</a>
           </div>
           <div className="relative">
             <img className="dark-phone" src={darkiphone1} alt="iPhone" />
@@ -24,7 +25,8 @@ const Contact = () => {
           <span><small>© All rights reserved</small></span>
           <ul>
             <li><a href="https://instagram.com/vitorguedesmadeira" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
-            <li><a href="https://github.com/VitorGuedesMadeira" target="_blank"><FaGithub /></a></li>
+            <li><a href="https://github.com/VitorGuedesMadeira" target="_blank" loquacious-marshmallow-469259
+><FaGithub /></a></li>
             <li><a href="https://www.linkedin.com/in/vitor-guedes-madeira/" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
           </ul>
         </footer>
