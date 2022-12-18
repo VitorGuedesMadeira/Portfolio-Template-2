@@ -58,6 +58,8 @@
 .project-image-div {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .project-image {
@@ -147,6 +149,7 @@
 .project-modal-image {
   width: 100%;
   aspect-ratio: 1 / 1;
+  border: 1px solid #6f23ff;
 }
 
 .project-modal h2 {
@@ -184,11 +187,12 @@
   outline: none;
   border-radius: 0.5rem;
   border: 1px solid #6f23ff;
-  background-image: linear-gradient(var(--color-5), #1b0d3674, rgba(109, 85, 153, 0.455));
+  background-color: var(--color-5);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .read-more {

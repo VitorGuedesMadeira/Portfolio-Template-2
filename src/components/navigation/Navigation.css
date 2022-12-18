@@ -9,7 +9,7 @@ nav {
   width: 100%;
   left: -5px;
   padding: 0 2rem;
-  z-index: 1;
+  z-index: 5;
 }
 
 .contact-info {
