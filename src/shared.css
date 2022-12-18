@@ -25,6 +25,7 @@
   background-image: url(./assets/gifs/noise.gif);
   opacity: 0.04;
   pointer-events: none;
+  z-index: 10000;
 }
 
 .flex-row {

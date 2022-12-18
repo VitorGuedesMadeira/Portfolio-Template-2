@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { FaUserAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
+import myLogo from '../../assets/images/vitorLogo2.png'
 import './Navigation.css';
 
 const Navigation = () => {
@@ -12,9 +13,9 @@ const Navigation = () => {
     return (
       <nav>
         <div className="flex-row">
-          <span>VGMadeira</span>
+          <img className="logo" src={myLogo} alt="logo" />
           <div className="contact-info">
-            <FaUserAlt />
+            <FaPhone />
             <span>+55 51 985615374</span>
           </div>
           <div className="contact-info">

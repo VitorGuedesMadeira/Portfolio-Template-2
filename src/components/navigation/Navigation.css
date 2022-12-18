@@ -12,6 +12,10 @@ nav {
   z-index: 5;
 }
 
+.logo {
+  height: 1.5rem;
+}
+
 .contact-info {
   display: none;
 }
@@ -97,11 +101,11 @@ nav {
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    font-size: 60%;
+    font-size: 50%;
   }
 
   .contact-info span {
-    padding-top: 0.4rem;
+    padding-top: 0.3rem;
   }
 
   .hamburger-menu.on div:nth-child(1) {
@@ -141,7 +145,7 @@ nav {
   }
 
   .navigation-list.on li:hover a {
-    color: goldenrod;
+    color: rgb(218, 165, 32);
   }
 
   .navigation-list.on li:nth-child(1) {

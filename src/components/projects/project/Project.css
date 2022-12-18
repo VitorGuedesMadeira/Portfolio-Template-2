@@ -193,6 +193,13 @@
   align-items: center;
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  padding-top: 0.9rem;
+  transition: 0.5s;
+}
+
+.project-modal-button:hover {
+  transform: scale(1.03);
+  border-color: white;
 }
 
 .read-more {
@@ -283,6 +290,7 @@
   .project-modal-button {
     width: fit-content;
     padding: 0.5rem 1.75rem;
+    padding-top: 0.9rem;
   }
 }
 

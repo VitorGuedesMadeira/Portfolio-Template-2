@@ -7,22 +7,38 @@ import Microverse from './components/microverse/Microverse';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Testimonials from './components/testimonials/Testimonials';
+import { useEffect, useState } from 'react';
+import loadingGif from './assets/gifs/logoGif2.gif'
 
 function App() {
-  return (
-    <div className="App">
-      <Navigation />
-      <main>
-        <Headline />
-        <About />
-        <Microverse />
-        <Projects />
-        <Testimonials />
-        <Contact />
-      </main>
+  const [isLoading, setIsLoading] = useState(false);
 
-      <div className="noise" />
-    </div>
+  useEffect(() => {
+    setTimeout(() => setIsLoading(true), 3000)
+ })
+
+  return (
+    <>
+      {isLoading ?
+        <div className="App">
+        <Navigation />
+        <main>
+          <Headline />
+          <About />
+          <Microverse />
+          <Projects />
+          <Testimonials />
+          <Contact />
+        </main>
+  
+        <div className="noise" />
+      </div>
+      :
+      <div className="loading-page">
+        <img className="loading-gif" src={loadingGif} alt="loading-gif" />
+      </div>
+    }
+    </>
   );
 }
 

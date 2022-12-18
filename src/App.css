@@ -27,7 +27,7 @@
 }
 
 body {
- background-color: #7d9fe4;
+ background-color: black;
  font-family: var(--font-2);
 }
 
@@ -62,6 +62,20 @@ section {
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(#2f0978, #7023ff, #2f0978);
   border-radius: 10px;
+}
+
+.loading-page {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-gif {
+  width: 20rem;
 }
 
 @media (min-width: 480px) {

@@ -5,6 +5,7 @@
   color: white;
   display: flex;
   flex-wrap: wrap;
+  animation: fadeDark 0.25s ease-in-out;
 }
 
 /* Text information */
@@ -114,6 +115,16 @@
 .contact-button:hover {
   transform: scale(1.05);
   background-image: linear-gradient(#5816d274, #5816d274, #7f64b374);
+}
+
+@keyframes fadeDark {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 480px) {
