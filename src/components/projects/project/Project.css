@@ -1,5 +1,5 @@
 .project-container {
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   width: 100%;
   min-width: 18rem;
   max-width: 25rem;
@@ -8,6 +8,8 @@
   box-shadow: 0 10px 20px black;
   color: var(--color-7);
   background-image: linear-gradient(var(--color-5), black);
+  border: 1px solid #6f23ff;
+  overflow: hidden;
 }
 
 .project-title {
@@ -257,7 +259,7 @@
 
   .project-modal {
     flex-direction: row;
-    height: 80%;
+    height: fit-content;
     max-width: 80rem;
   }
 
@@ -267,6 +269,11 @@
 
   .project-modal-mobile-title {
     display: none;
+  }
+
+  .project-modal-buttons {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .project-modal-button {

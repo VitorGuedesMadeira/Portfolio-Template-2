@@ -28,7 +28,7 @@
   left: 0;
   bottom: 1rem;
   width: 15rem;
-  z-index: 1;
+  z-index: 0;
 }
 
 .vscode1 {
