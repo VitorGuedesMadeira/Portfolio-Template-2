@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2rem;
+  height: 100%;
 }
 
 .contact-column {
@@ -114,6 +115,7 @@ footer ul li:hover {
 @media (min-width: 768px) {
   .contact-section-container {
     font-size: 120%;
+    height: 100vh;
   }
 
   .contact-column {

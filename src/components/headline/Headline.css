@@ -42,7 +42,7 @@
 .headline-information p:nth-child(3) {
   color: goldenrod; 
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .headline-information p:nth-child(4) {
@@ -100,8 +100,8 @@
 .contact-button {
   border: 1px solid #6f23ff;
   background-image: linear-gradient(#6f23ff74, #7023ff74, #ab8ce674);  width: fit-content;
-  min-width: 9rem;
-  padding: 0.5rem;
+  width: 10rem;
+  padding: 0.75rem 1rem;
   text-align: center;
   border-radius: 1rem;
   cursor: pointer;
