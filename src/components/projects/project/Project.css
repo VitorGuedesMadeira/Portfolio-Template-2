@@ -172,6 +172,7 @@
 .modal-description.on {
   display: flex;
   overflow-y: auto;
+  height: 10.5rem;
 }
 
 .project-modal-buttons {
