@@ -18,7 +18,7 @@ const Headline = () => {
             <li><a href="https://github.com/VitorGuedesMadeira" target="_blank" rel="noreferrer"><FaGithub /></a></li>
             <li><a href="https://www.linkedin.com/in/vitor-guedes-madeira/" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
           </ul>
-          <div>
+          <div className="headline-texts">
             <p>Hi, my name is</p>
             <p>Vitor G. Madeira</p>
             <p>I build things for the web</p>

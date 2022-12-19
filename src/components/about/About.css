@@ -39,8 +39,9 @@
 
 .about-information ul li {
   display: flex;
+  gap: 0.5rem;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 480px) {
@@ -53,11 +54,7 @@
   }
 
   .about-information ul {
-    column-gap: 2rem;
-  }
-
-  .about-information ul li span {
-    padding-top: 0.5rem;
+    column-gap: 4rem;
   }
 
   .about-section-container {

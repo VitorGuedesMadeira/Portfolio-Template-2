@@ -34,9 +34,13 @@ function App() {
         <div className="noise" />
       </div>
       :
-      <div className="loading-page">
-        <img className="loading-gif" src={loadingGif} alt="loading-gif" />
-      </div>
+      <>
+        <div className="loading-page">
+          <img className="loading-gif" src={loadingGif} alt="loading-gif" />
+        </div>
+
+        <div className="noise" />
+      </>
     }
     </>
   );

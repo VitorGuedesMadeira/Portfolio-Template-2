@@ -41,7 +41,6 @@
   border-radius: 15px;
   text-decoration: none;
   width: fit-content;
-  padding-bottom: 0;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -129,6 +128,10 @@ footer ul li:hover {
 
   .dark-phone {
     height: 20rem;
+  }
+
+  footer ul {
+    gap: 3rem;
   }
 }
 
