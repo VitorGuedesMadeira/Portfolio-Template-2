@@ -21,7 +21,7 @@ const Project = (props) => {
           <div className="project-modal">
             <h2 className="project-modal-mobile-title">{props.project.title}</h2>
             <FaWindowClose className="close-button" onClick={toggleClass} />
-            <img className="project-modal-image" src={props.project.image} />
+            <img className="project-modal-image" src={props.project.image} alt="modal" />
             <div className="project-modal-information">
               <h2 className="project-modal-desktop-title">{props.project.title}</h2>
               <h3>{props.project.subtitle}</h3>
