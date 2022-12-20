@@ -13,7 +13,6 @@
 
 .swiper {
   width: 100%;
-  height: 75%;
   border-radius: 1rem;
   border: 1px solid #6f23ff;
   background-image: url(../../assets/images/texture1.png), linear-gradient(#6f23ff40, #7023ff40, #4b2a88b7);
@@ -29,20 +28,22 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
-  justify-content: center;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  padding: 1rem;
+  height: fit-content;
 }
 
 .swiper-slide img {
   display: block;
-  width: 10%;
+  width: 8rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
@@ -62,7 +63,6 @@
 
 .user-role {
   color: goldenrod;
-  font-size: 90%;
   font-weight: 300;
 }
 
@@ -82,6 +82,18 @@
 
   .testimonials-information {
     font-size: 100%;
+  }
+
+  .swiper-slide img {
+    width: 7rem;
+  }
+
+  .user-role {
+    font-size: 90%;
+  }
+
+  .user-testimonial {
+    font-size: 75%;
   }
 }
 
