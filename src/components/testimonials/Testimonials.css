@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .testimonials-title {
@@ -27,6 +28,8 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -39,9 +42,33 @@
 
 .swiper-slide img {
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   object-fit: cover;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 75%;
+}
+
+.user-name {
+  color: white;
+  font-weight: 700;
+}
+
+.user-role {
+  color: goldenrod;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+.user-testimonial {
+  color: var(--color-7);
+  font-size: 75%;
 }
 
 @media (min-width: 480px) {

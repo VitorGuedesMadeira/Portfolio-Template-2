@@ -210,22 +210,6 @@
   cursor: pointer;
 }
 
-.swiper {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-
 @keyframes play-project {
   0% {
     transform: translate3d(0, 0, 0);
