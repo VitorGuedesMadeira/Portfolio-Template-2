@@ -146,7 +146,6 @@
 .project-modal-image {
   width: 100%;
   aspect-ratio: 1 / 1;
-  border: 1px solid #6f23ff;
 }
 
 .project-modal h2 {
@@ -211,6 +210,22 @@
   cursor: pointer;
 }
 
+.swiper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
 @keyframes play-project {
   0% {
     transform: translate3d(0, 0, 0);
@@ -256,14 +271,6 @@
 }
 
 @media (min-width: 768px) {
-  .project-container {
-    transition: 0.5s;
-  }
-
-  .project-container:hover {
-    transform: scale(1.01);
-  }
-
   .project-image-overlay {
     display: flex;
     content: '';
