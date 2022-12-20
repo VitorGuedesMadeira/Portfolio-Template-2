@@ -43,7 +43,7 @@
 .microverse-information {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1.5rem;
   max-width: 25rem;
 }
 
@@ -109,6 +109,25 @@
 }
 
 @media (min-width: 480px) {
+  .microverse-logo {
+    bottom: 12rem;
+    left: unset;
+    right: 4rem;
+    z-index: 0;
+    width: 5rem;
+  }
+
+  .hand {
+    left: unset;
+    right: 0;
+    bottom: 1rem;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 0;
+    width: 13rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -122,23 +141,11 @@
   }
 
   .microverse-logo {
-    bottom: 12rem;
-    left: unset;
-    right: 4rem;
     width: 7rem;
-    z-index: 0;
   }
 
   .hand {
-    left: unset;
-    right: 0;
-    bottom: 1rem;
     width: 15rem;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    z-index: 0;
   }
 }
 

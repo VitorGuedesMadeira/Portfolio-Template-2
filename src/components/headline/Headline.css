@@ -138,6 +138,10 @@
 }
 
 @media (min-width: 768px) {
+  .headline-texts {
+    gap: 1.5rem;
+  }
+
   .headline-section-container {
     background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
     font-size: 120%;

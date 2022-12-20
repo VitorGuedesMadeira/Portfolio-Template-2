@@ -46,6 +46,7 @@ const Project = (props) => {
           </div>
           <div className="project-image-div">
             <img className="project-image" src={props.project.image} alt="project" />
+            <div className="project-image-overlay" />
           </div>
           <div className="see-project">
             <p>Open Project</p>

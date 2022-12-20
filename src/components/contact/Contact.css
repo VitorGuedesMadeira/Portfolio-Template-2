@@ -116,14 +116,10 @@ footer ul li:hover {
     font-size: 120%;
   }
 
-  .contact-column {
-    flex-direction: row;
-    gap: 7.75rem;
-  }
-
   .contact-information {
     align-items: flex-start;
     text-align: left;
+    gap: 1.5rem;
   }
 
   .dark-phone {
@@ -138,5 +134,15 @@ footer ul li:hover {
 @media (min-width: 1024px) {
   .contact-section-container {
     font-size: 140%;
+  }
+
+  .contact-column {
+    flex-direction: row;
+    gap: 7.75rem;
+    justify-content: space-between;
+  }
+
+  .relative {
+    justify-content: flex-end;
   }
 }
