@@ -3,7 +3,6 @@
   flex-direction: column;
   color: var(--color-1);
   background-color: var(--color-5);
-  background-image:  linear-gradient(to top, black, transparent);
 }
 
 .about-information {
@@ -29,19 +28,6 @@
   font-weight: 700;
   color: var(--color-2);
   text-decoration: none;
-}
-
-.about-information ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  list-style: none;
-}
-
-.about-information ul li {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  font-size: 0.75rem;
 }
 
 @media (min-width: 480px) {

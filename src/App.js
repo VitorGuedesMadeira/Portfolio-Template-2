@@ -3,6 +3,7 @@ import './shared.css';
 import Navigation from './components/navigation/Navigation';
 import Headline from './components/headline/Headline';
 import About from './components/about/About';
+import Skills from './components/skills/Skills';
 import Microverse from './components/microverse/Microverse';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
@@ -26,6 +27,7 @@ function App() {
         <main>
           <Headline />
           <About />
+          <Skills />
           <Microverse />
           <Projects />
           <Testimonials />

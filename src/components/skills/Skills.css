@@ -1,0 +1,29 @@
+.skills-section-container {
+  background-image:  linear-gradient(to top, black, transparent);
+  background-color: var(--color-5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 25rem;
+}
+
+.skills-information ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.skills-information ul li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

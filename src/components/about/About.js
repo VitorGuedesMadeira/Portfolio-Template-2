@@ -1,5 +1,5 @@
 import './About.css';
-import { FaLocationArrow, FaAngleRight } from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa";
 
 const About = () => {
     return (
@@ -15,44 +15,6 @@ const About = () => {
             <p>Fast-forward to today, and I’ve had the privilege of working at <a href="https://www.microverse.org/" target="_blank" rel="noreferrer">Microverse</a> with several other applicants from all around the globe and very different cultures! My main focus these days is building accessible, inclusive products and digital experiences so I can improve my skills everyday.</p>
             <p>I also recently wrote a <a href="https://medium.com/@vitorguedesmadeira/you-teach-you-learn-6f5ac50aae65" target="_blank" rel="noreferrer">Medium article</a> that covers some topics that really helped me, specially during my very first development steps. Feel very welcome to read it!</p>
           </div>
-          <ul>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>JavaScript</span>
-            </li>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>VSCode</span>
-            </li>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>RSpec</span>
-            </li>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>React/Redux</span>
-            </li>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>Node.js</span>
-            </li>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>Photoshop</span>
-            </li>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>Ruby/Rails</span>
-            </li>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>PostgreSQL</span>
-            </li>
-            <li>
-              <FaAngleRight className="small-arrow-icon" />
-              <span>Capybara</span>
-            </li>
-          </ul>
         </div>
       </section>
     );

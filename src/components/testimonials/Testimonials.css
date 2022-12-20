@@ -47,6 +47,9 @@
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
+  border: 1px solid #6f23ff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .testimonial-info {
