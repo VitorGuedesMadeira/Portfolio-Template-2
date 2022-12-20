@@ -1,4 +1,4 @@
-import { FaAngleRight, FaLocationArrow } from 'react-icons/fa';
+import { FaLocationArrow } from 'react-icons/fa';
 import icon1 from '../../assets/icons/javascript.png'
 import icon2 from '../../assets/icons/react.png'
 import icon3 from '../../assets/icons/ruby.png'
