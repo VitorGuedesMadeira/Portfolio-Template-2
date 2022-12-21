@@ -1,5 +1,5 @@
 .testimonials-section-container {
-  background-image: url(../../assets/images/texture1.png), linear-gradient(to bottom, var(--color-5), black);
+  background-image: linear-gradient(to bottom, black, transparent 15%), url(../../assets/images/texture1.png), linear-gradient(to bottom, var(--color-5), black);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +9,7 @@
 
 .testimonials-title {
   color: white;
+  font-size: 2rem;
 }
 
 .swiper {

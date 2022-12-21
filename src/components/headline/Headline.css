@@ -1,5 +1,5 @@
 .headline-section-container {
-  background-image: linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile2.jpg);
+  background-image: linear-gradient(to top, black, transparent 10%), url(../../assets/images/backgroundMobile2.jpg);
   background-size: cover;
   background-position: center center;
   color: white;
@@ -133,7 +133,8 @@
 
 @media (min-width: 480px) {
   .headline-section-container {
-    background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile3.jpg);
+    background-image:  linear-gradient(to top, black
+    , transparent 10%), url(../../assets/images/backgroundMobile3.jpg);
   }
 }
 
@@ -143,7 +144,7 @@
   }
 
   .headline-section-container {
-    background-image:  linear-gradient(to top, var(--color-5), transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
+    background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
     font-size: 120%;
     align-items: center;
   }

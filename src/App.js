@@ -27,9 +27,9 @@ function App() {
         <main>
           <Headline />
           <About />
+          <Projects />
           <Skills />
           <Microverse />
-          <Projects />
           <Testimonials />
           <Contact />
         </main>

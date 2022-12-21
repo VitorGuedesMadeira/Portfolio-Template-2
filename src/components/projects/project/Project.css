@@ -41,6 +41,15 @@
   justify-content: center;
 }
 
+.project-modal-skills {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project-skills li {
   padding: 0.05rem 0.5rem;
   border: 1px solid goldenrod;
@@ -49,7 +58,19 @@
   background-color: rgba(218, 165, 32, 0.1);
 }
 
+.project-modal-skills li {
+  padding: 0.05rem 0.5rem;
+  border: 1px solid goldenrod;
+  border-radius: 0.25rem;
+  color: goldenrod;
+  background-color: rgba(218, 165, 32, 0.1);
+}
+
 .project-skills li:hover {
+  background-color: rgba(218, 165, 32, 0.3);
+}
+
+.project-modal-skills li:hover {
   background-color: rgba(218, 165, 32, 0.3);
 }
 
@@ -116,7 +137,7 @@
 .project-modal {
   position: relative;
   padding: 1rem;
-  width: 100%;
+  width: fit-content;
   max-height: 100%;
   min-height: fit-content;
   border-radius: 0.5rem;
@@ -125,6 +146,12 @@
   background-image: url(../../../assets/images/texture1.png), linear-gradient(#6f23ff40, #7023ff40, #4b2a88b7);
   z-index: 100;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-modal-information {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -157,24 +184,29 @@
 }
 
 .modal-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   color: var(--color-7);
   text-align: justify;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
 .modal-description.on {
   display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   overflow-y: auto;
-  height: 10.5rem;
+  -webkit-line-clamp: unset;
 }
 
 .project-modal-buttons {
   display: flex;
   gap: 0.25rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .project-modal-button {
@@ -283,7 +315,7 @@
   .project-modal {
     flex-direction: row;
     height: fit-content;
-    max-width: 80rem;
+    width: calc(100 / 2);
   }
 
   .project-modal-desktop-title {

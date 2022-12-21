@@ -1,5 +1,5 @@
 import './Contact.css';
-import { FaLocationArrow, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLocationArrow, FaMedium, FaGithub, FaLinkedin } from "react-icons/fa";
 import darkiphone1 from '../../assets/images/darkiphone1.png'
 import darkiphone2 from '../../assets/images/darkiphone2.png'
 
@@ -23,7 +23,7 @@ const Contact = () => {
         <footer>
           <span><small>© All rights reserved</small></span>
           <ul>
-            <li><a href="https://instagram.com/vitorguedesmadeira" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
+            <li><a href="https://medium.com/@vitorguedesmadeira/you-teach-you-learn-6f5ac50aae65" target="_blank" rel="noreferrer"><FaMedium /></a></li>
             <li><a href="https://github.com/VitorGuedesMadeira" target="_blank" rel="noreferrer"><FaGithub /></a></li>
             <li><a href="https://www.linkedin.com/in/vitor-guedes-madeira/" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
           </ul>

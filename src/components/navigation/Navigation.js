@@ -27,8 +27,9 @@ const Navigation = () => {
         <ul className={isHamburgerActive ? 'navigation-list on' : 'navigation-list'}>
           <li onClick={toggleClass}><a href="#headline">Home</a></li>
           <li onClick={toggleClass}><a href="#about">About</a></li>
-          <li onClick={toggleClass}><a href="#skills">Skills</a></li>
           <li onClick={toggleClass}><a href="#projects">Projects</a></li>
+          <li onClick={toggleClass}><a href="#skills">Skills</a></li>
+          <li onClick={toggleClass}><a href="#testimonials">Testimonials</a></li>
           <li onClick={toggleClass}><a href="#contact">Contact</a></li>
         </ul>
 

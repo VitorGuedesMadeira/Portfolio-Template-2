@@ -25,11 +25,18 @@ const Project = (props) => {
             <div className="project-modal-information">
               <h2 className="project-modal-desktop-title">{props.project.title}</h2>
               <h3>{props.project.subtitle}</h3>
-              <p className={isReadMoreActive ? 'modal-description on' : 'modal-description'}>{props.project.description}</p>
+              <div className={isReadMoreActive ? 'modal-description on' : 'modal-description'}>
+                <p>{props.project.description}</p>
+                <ul className="project-modal-skills">
+                {skills.map(element =>
+                  <li key={props.project.id}>{element}</li>
+                )}
+                </ul>
+              </div>
               <button className="read-more" onClick={toggleReadMore}>Read more</button>
               <div className="project-modal-buttons">
-                <a href={props.project.live} className="project-modal-button">Live</a>
-                <a href={props.project.github} className="project-modal-button">GitHub</a>
+                <a href={props.project.live} className="project-modal-button" target="_blank">Live</a>
+                <a href={props.project.github} className="project-modal-button" target="_blank">GitHub</a>
               </div>
             </div>
           </div>

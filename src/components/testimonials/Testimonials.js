@@ -26,8 +26,8 @@ const Testimonials = () => {
       id: 2,
       name: "Karla Delgado",
       role: "Full Stack Developer",
-      testimonial: "Vitor is sort of guy you're always happy to work with. I met him while the React Redux module and he was always one step forward, always studying extra hours and worried about the understanding of the topics, and then willing to help his peers when struggled. His dedication and determination are necessary to remark, as well as his clean codes an amazing designs.",
-      image: "https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk"
+      testimonial: "I have had a genuinely wonderful experience working with Vitor. He's self-disciplined, passionate about his work, creative, and diligent. He's also sympathetic and thrives at effectively troubleshooting with others, which makes him the perfect fit for collaborating in any environment. From my experience, I'm proud to say that Vitor brings outstanding leadership capabilities to any team. In a competitive and transitional industry like this one, any company will benefit from having Vitor as he will surpass expected outcomes and deliver high-quality products on time.",
+      image: "https://media.licdn.com/dms/image/D4E35AQHxoL4Oa1xGCA/profile-framedphoto-shrink_800_800/0/1661573000556?e=1672250400&v=beta&t=EJT-B0JyueHiyT7SIS4UPETbWj6qd6dz4OFDIA3FupQ"
     },
     {
       id: 3,
@@ -60,7 +60,7 @@ const Testimonials = () => {
   ]
 
     return (
-      <section className="testimonials-section-container">
+      <section id="testimonials" className="testimonials-section-container">
         <div className="testimonials-information">
           <div className="testimonials-title">
             <FaLocationArrow className="arrow-icon" />

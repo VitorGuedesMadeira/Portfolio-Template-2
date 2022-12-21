@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaEnvelope, FaLinkedin, FaInstagram, FaPaperclip, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaInstagram, FaPaperclip, FaGithub, FaMedium } from "react-icons/fa";
 import resume from '../../assets/files/Profile.pdf';
 import './Headline.css';
 
@@ -14,7 +14,7 @@ const Headline = () => {
       <section id="headline" className="headline-section-container">
         <div className="headline-information">
           <ul className="headline-icons">
-            <li><a href="https://instagram.com/vitorguedesmadeira" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
+            <li><a href="https://medium.com/@vitorguedesmadeira/you-teach-you-learn-6f5ac50aae65" target="_blank" rel="noreferrer"><FaMedium /></a></li>
             <li><a href="https://github.com/VitorGuedesMadeira" target="_blank" rel="noreferrer"><FaGithub /></a></li>
             <li><a href="https://www.linkedin.com/in/vitor-guedes-madeira/" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
           </ul>
@@ -41,9 +41,7 @@ const Headline = () => {
             </a>
           </div>
           <div className="contact-button">
-            <a href="https://www.instagram.com/vitorguedesmadeira/" target="_blank" rel="noreferrer">
-            <FaInstagram />
-            Instagram</a>
+          <a href="https://medium.com/@vitorguedesmadeira/you-teach-you-learn-6f5ac50aae65" target="_blank" rel="noreferrer"><FaMedium />Articles</a>
           </div>
           <div className="contact-button">
             <a href="https://docs.google.com/document/d/1LbPa1ridPgLK8a7S7N86yOm4bRhlgkTKyYPqqfxeKbI/edit" target="_blank" rel="noreferrer">

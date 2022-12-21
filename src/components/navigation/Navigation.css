@@ -169,6 +169,11 @@ nav {
     pointer-events: visible;
     animation: hamburger-slide-right-5 0.5s;
   }
+
+  .navigation-list.on li:nth-child(6) {
+    pointer-events: visible;
+    animation: hamburger-slide-right-6 0.5s;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -196,7 +201,7 @@ nav {
     transform: translate3d(250px, 0, 0);
   }
 
-  20% {
+  16.66% {
     opacity: 0;
     transform: translate3d(250px, 0, 0);
   }
@@ -213,7 +218,7 @@ nav {
     transform: translate3d(250px, 0, 0);
   }
 
-  40% {
+  33.33% {
     opacity: 0;
     transform: translate3d(250px, 0, 0);
   }
@@ -230,7 +235,7 @@ nav {
     transform: translate3d(250px, 0, 0);
   }
 
-  60% {
+  49.99% {
     opacity: 0;
     transform: translate3d(250px, 0, 0);
   }
@@ -247,7 +252,24 @@ nav {
     transform: translate3d(250px, 0, 0);
   }
 
-  80% {
+  66.66% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hamburger-slide-right-6 {
+  0% {
+    opacity: 0;
+    transform: translate3d(250px, 0, 0);
+  }
+
+  83.33% {
     opacity: 0;
     transform: translate3d(250px, 0, 0);
   }
