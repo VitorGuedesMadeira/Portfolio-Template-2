@@ -34,15 +34,16 @@
   align-items: center;  border-radius: 1rem;
   border: 1px solid #6f23ff;
   background-image: url(../../assets/images/texture1.png), linear-gradient(#6f23ff40, #7023ff40, #4b2a88b7);
-  width: 100%;
-  padding: 1rem;
+  width: fit-content;
 }
 
 .skills-box ul {
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0.5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .skills-box ul li {
@@ -57,6 +58,7 @@
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .skills-box ul li:hover {

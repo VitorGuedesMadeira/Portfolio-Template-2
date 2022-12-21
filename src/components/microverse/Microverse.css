@@ -147,6 +147,10 @@
   .hand {
     width: 15rem;
   }
+
+  .vscode1 {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {

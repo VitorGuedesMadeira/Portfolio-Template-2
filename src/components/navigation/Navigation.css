@@ -104,10 +104,6 @@ nav {
     font-size: 50%;
   }
 
-  .contact-info span {
-    padding-top: 0.3rem;
-  }
-
   .hamburger-menu.on div:nth-child(1) {
     rotate: 45deg;
   }
