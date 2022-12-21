@@ -35,8 +35,8 @@ const Project = (props) => {
               </div>
               <button className="read-more" onClick={toggleReadMore}>Read more</button>
               <div className="project-modal-buttons">
-                <a href={props.project.live} className="project-modal-button" target="_blank">Live</a>
-                <a href={props.project.github} className="project-modal-button" target="_blank">GitHub</a>
+                <a href={props.project.live} className="project-modal-button" target="_blank" rel="noreferrer">Live</a>
+                <a href={props.project.github} className="project-modal-button" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
           </div>

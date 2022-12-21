@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaEnvelope, FaLinkedin, FaInstagram, FaPaperclip, FaGithub, FaMedium } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaPaperclip, FaGithub, FaMedium } from "react-icons/fa";
 import resume from '../../assets/files/Profile.pdf';
 import './Headline.css';
 
