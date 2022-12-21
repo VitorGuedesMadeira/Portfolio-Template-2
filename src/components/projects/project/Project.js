@@ -1,0 +1,67 @@
+import './Project.css';
+import { useState } from 'react';
+import { FaWindowClose } from "react-icons/fa";
+
+const Project = (props) => {
+  const [isModalActive, setModalActive] = useState(false);
+  const [isReadMoreActive, setReadMoreActive] = useState(false);
+  const skills = props.project.skills
+
+  const toggleClass = () => {
+    setModalActive(!isModalActive);
+  };
+
+  const toggleReadMore = () => {
+    setReadMoreActive(!isReadMoreActive);
+  }
+
+    return (
+      <>
+        <div className={isModalActive ? 'modal on' : 'modal'}>
+          <div className="project-modal">
+            <h2 className="project-modal-mobile-title">{props.project.title}</h2>
+            <FaWindowClose className="close-button" onClick={toggleClass} />
+            <img className="project-modal-image" src={props.project.image} alt="modal" />
+            <div className="project-modal-information">
+              <h2 className="project-modal-desktop-title">{props.project.title}</h2>
+              <h3>{props.project.subtitle}</h3>
+              <div className={isReadMoreActive ? 'modal-description on' : 'modal-description'}>
+                <p>{props.project.description}</p>
+                <ul className="project-modal-skills">
+                {skills.map(element =>
+                  <li key={props.project.id}>{element}</li>
+                )}
+                </ul>
+              </div>
+              <button className="read-more" onClick={toggleReadMore}>Read more</button>
+              <div className="project-modal-buttons">
+                <a href={props.project.live} className="project-modal-button" target="_blank">Live</a>
+                <a href={props.project.github} className="project-modal-button" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div onClick={toggleClass} className="project-container">
+          <h2 className="project-title">{props.project.title}</h2>
+          <div className="project-information">
+            <ul className="project-skills">
+              {skills.map(element => 
+                <li key={props.project.id}>{element}</li>
+              )}
+            </ul>
+          </div>
+          <div className="project-image-div">
+            <img className="project-image" src={props.project.image} alt="project" />
+            <div className="project-image-overlay" />
+          </div>
+          <div className="see-project">
+            <p>Open Project</p>
+          </div>
+        </div>
+        </>
+    );
+  };
+  
+export default Project;
+  

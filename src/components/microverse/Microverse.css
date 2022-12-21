@@ -1,0 +1,174 @@
+.microverse-section-container {
+  background-color: black;
+  background-image: linear-gradient(45deg, black, transparent), linear-gradient(transparent, black), linear-gradient(black, transparent), url(../../assets/images/phones2.png);
+  background-size: cover;
+  position: relative;
+  color: white;
+  display: flex;
+}
+
+.microverse-logo {
+  bottom: 11rem;
+  left: 5rem;
+  position: absolute;
+  width: 6rem;
+  border-radius: 30px;
+  box-shadow:
+    0 0 5px #6f23ff,
+    0 0 15px #6f23ff,
+    0 0 35px #6f23ff,
+    0 0 75px #6f23ff,
+    0 0 125px #6f23ff;
+  animation: microverse 4s infinite ease-in-out;
+  z-index: 2;
+}
+
+.hand {
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 15rem;
+  z-index: 0;
+}
+
+.vscode1 {
+  position: absolute;
+  right: -1rem;
+  bottom: 1rem;
+  width: 15rem;
+  z-index: 0;
+  opacity: 0.15;
+}
+
+.microverse-information {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 25rem;
+}
+
+.microverse-title span {
+  font-size: 2rem;
+}
+
+.microverse-date {
+  color: goldenrod;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.microverse-description {
+  color: var(--color-7);
+}
+
+.microverse-information a {
+  font-weight: 700;
+  color: var(--color-2);
+  text-decoration: none;
+}
+
+@keyframes microverse {
+  0% {
+    rotate: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  25% {
+    box-shadow:
+    0 0 20px #6f23ff,
+    0 0 40px #6f23ff,
+    0 0 60px #6f23ff,
+    0 0 100px #6f23ff,
+    0 0 150px #6f23ff;
+  }
+
+  50% {
+    rotate: 10deg;
+    transform: translate3d(0, -10px, 0);
+    box-shadow:
+    0 0 5px #6f23ff,
+    0 0 15px #6f23ff,
+    0 0 35px #6f23ff,
+    0 0 75px #6f23ff,
+    0 0 125px #6f23ff;
+  }
+
+  75% {
+    box-shadow:
+    0 0 20px #6f23ff,
+    0 0 40px #6f23ff,
+    0 0 60px #6f23ff,
+    0 0 100px #6f23ff,
+    0 0 150px #6f23ff;
+  }
+
+  100% {
+    rotate: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (min-width: 480px) {
+  .microverse-logo {
+    bottom: 12rem;
+    left: unset;
+    right: 4rem;
+    z-index: 0;
+    width: 5rem;
+  }
+
+  .hand {
+    left: unset;
+    right: 0;
+    bottom: 1rem;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 0;
+    width: 13rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .microverse-section-container {
+    font-size: 120%;
+    align-items: center;
+  }
+
+  .microverse-information {
+    max-width: calc(100% / 2);
+  }
+
+  .microverse-logo {
+    width: 7rem;
+  }
+
+  .hand {
+    width: 15rem;
+  }
+
+  .vscode1 {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .microverse-section-container {
+    font-size: 140%;
+  }
+
+  .microverse-logo {
+    bottom: 20rem;
+    right: 10rem;
+    width: 7rem;
+  }
+
+  .hand {
+    bottom: 1rem;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+}

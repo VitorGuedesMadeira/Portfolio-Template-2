@@ -1,0 +1,34 @@
+.arrow-icon {
+  rotate: 45deg;
+  margin-right: 1rem;
+  color: var(--color-2);
+  box-shadow: 0 0 10px var(--color-2);
+  border-radius: 3px;
+  background-color: var(--color-5);
+  transition: 0.5s;
+}
+
+.arrow-icon:hover {
+  rotate: 135deg;
+}
+
+.small-arrow-icon {
+  color: goldenrod;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/gifs/noise.gif);
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.flex-row {
+  display: flex;
+  gap: 2rem;
+}
