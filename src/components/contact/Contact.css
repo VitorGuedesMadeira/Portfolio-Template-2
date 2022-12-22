@@ -108,6 +108,25 @@ footer ul li:hover {
   }
 }
 
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#form input,
+#form textarea,
+#form button {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+#form button {
+  background-color: #6f23ff;
+  color: white;
+}
+
 @media (min-width: 480px) {
 }
 

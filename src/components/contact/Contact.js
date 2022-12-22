@@ -12,8 +12,33 @@ const Contact = () => {
               <FaLocationArrow className="arrow-icon" />
               <span>Get In Touch</span>
             </div>
-            <p>If you want to work together on a project or just have a chat, please don't hesitate to contact me via email below.</p>
-            <a class="email-link" href="mailto:vgm_rox@hotmail.com" target="_blank" rel="noreferrer">Say Hello</a>
+            <form action="https://formspree.io/f/mlekrwao" method="post" id="form">
+              <input
+                type="text"
+                name="name"
+                required
+                maxLength="30"
+                placeholder="Full Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Email address"
+              />
+              <textarea
+                name="message"
+                cols="30"
+                rows="7"
+                maxLength="500"
+                required
+                placeholder="Enter text here"
+              >
+              </textarea>
+              <small></small>
+            <button type="submit">Get in touch</button>
+          </form>
           </div>
           <div className="relative">
             <img className="dark-phone" src={darkiphone1} alt="iPhone" />
