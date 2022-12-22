@@ -141,11 +141,13 @@
   }
 
   .microverse-logo {
-    width: 7rem;
+    bottom: 15rem;
+    right: 8rem;
+    width: 6rem;
   }
 
   .hand {
-    width: 15rem;
+    width: 20rem;
   }
 
   .vscode1 {
@@ -160,13 +162,13 @@
 
   .microverse-logo {
     bottom: 20rem;
-    right: 10rem;
+    right: 11rem;
     width: 7rem;
   }
 
   .hand {
     bottom: 1rem;
-    width: 25rem;
+    width: 28rem;
   }
 }
 
