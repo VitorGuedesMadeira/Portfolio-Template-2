@@ -42,7 +42,7 @@ const Project = (props) => {
           </div>
         </div>
 
-        <div onClick={toggleClass} className="project-container">
+        <div onClick={toggleClass} className="project-container" data-aos="fade-up">
           <h2 className="project-title">{props.project.title}</h2>
           <div className="project-information">
             <ul className="project-skills">

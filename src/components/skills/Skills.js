@@ -13,7 +13,7 @@ import './Skills.css';
 const Skills = () => {
     return (
       <section id="skills" className="skills-section-container">
-        <div className="skills-information">
+        <div className="skills-information" data-aos="fade-up">
           <div className="about-title">
             <FaLocationArrow className="arrow-icon" />
             <span>Skills</span>

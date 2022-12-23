@@ -61,7 +61,7 @@ const Testimonials = () => {
 
     return (
       <section id="testimonials" className="testimonials-section-container">
-        <div className="testimonials-information">
+        <div className="testimonials-information" data-aos="fade-up">
           <div className="testimonials-title">
             <FaLocationArrow className="arrow-icon" />
             <span>Testimonials</span>
@@ -83,6 +83,7 @@ const Testimonials = () => {
             navigation={true}
             modules={[Pagination, Navigation, Mousewheel, Autoplay]}
             className="mySwiper"
+            data-aos="fade-up"
           >
             {linkedinTestimonials.map((user) => 
               <SwiperSlide key={user.id}>

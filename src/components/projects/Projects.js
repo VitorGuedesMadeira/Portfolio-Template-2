@@ -75,7 +75,7 @@ const Projects = () => {
     return (
       <section id="projects" className="projects-section-container">
         <div className="projects-flex-column">
-          <div className="about-title">
+          <div className="about-title" data-aos="fade-up">
             <FaLocationArrow className="arrow-icon" />
             <span>Projects</span>
             <p className="microverse-date">GitHub - Pinned Projects</p>

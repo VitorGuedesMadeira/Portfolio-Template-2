@@ -12,7 +12,7 @@ const Headline = () => {
 
     return (
       <section id="headline" className="headline-section-container">
-        <div className="headline-information">
+        <div className="headline-information" data-aos="fade-right">
           <ul className="headline-icons">
             <li><a href="https://medium.com/@vitorguedesmadeira/you-teach-you-learn-6f5ac50aae65" target="_blank" rel="noreferrer"><FaMedium /></a></li>
             <li><a href="https://github.com/VitorGuedesMadeira" target="_blank" rel="noreferrer"><FaGithub /></a></li>
