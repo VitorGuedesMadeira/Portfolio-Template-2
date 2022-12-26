@@ -49,6 +49,8 @@
 
 .microverse-title span {
   font-size: 2rem;
+  font-family: var(--font-6);
+  letter-spacing: 0.1rem;
 }
 
 .microverse-date {

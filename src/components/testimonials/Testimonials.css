@@ -10,6 +10,8 @@
 .testimonials-title {
   color: white;
   font-size: 2rem;
+  font-family: var(--font-6);
+  letter-spacing: 0.1rem;
 }
 
 .swiper {

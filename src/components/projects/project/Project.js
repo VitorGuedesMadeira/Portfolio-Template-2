@@ -23,17 +23,18 @@ const Project = (props) => {
             <FaWindowClose className="close-button" onClick={toggleClass} />
             <img className="project-modal-image" src={props.project.image} alt="modal" />
             <div className="project-modal-information">
-              <h2 className="project-modal-desktop-title">{props.project.title}</h2>
-              <h3>{props.project.subtitle}</h3>
-              <div className={isReadMoreActive ? 'modal-description on' : 'modal-description'}>
-                <p>{props.project.description}</p>
+              <div className="project-modal-texts">
+                <h2 className="project-modal-desktop-title">{props.project.title}</h2>
+                <h3>{props.project.subtitle}</h3>
+                <p className={isReadMoreActive ? 'modal-description on' : 'modal-description'}>{props.project.description}
                 <ul className="project-modal-skills">
                 {skills.map(element =>
                   <li key={props.project.id}>{element}</li>
                 )}
-                </ul>
+              </ul>
+              </p>
+                <button className="read-more" onClick={toggleReadMore}>Read more</button>
               </div>
-              <button className="read-more" onClick={toggleReadMore}>Read more</button>
               <div className="project-modal-buttons">
                 <a href={props.project.live} className="project-modal-button" target="_blank" rel="noreferrer">Live</a>
                 <a href={props.project.github} className="project-modal-button" target="_blank" rel="noreferrer">GitHub</a>
