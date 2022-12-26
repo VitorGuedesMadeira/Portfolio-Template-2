@@ -73,6 +73,7 @@
   .vitor-guedes {
     display: flex;
     height: 15rem;
+    position: relative;
   }
 }
 
