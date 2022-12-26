@@ -16,11 +16,11 @@ const Navigation = () => {
           <img className="logo" src={myLogo} alt="logo" />
           <div className="contact-info">
             <FaPhone />
-            <span>+55 51 985615374</span>
+            <a href="https://api.whatsapp.com/send?phone=5551985615374" target="_blank" rel="noreferrer">+55 51 985615374</a>
           </div>
           <div className="contact-info">
             <FaEnvelope />
-            <span>vgm_rox@hotmail.com</span>
+            <a href="mailto:vgm_rox@hotmail.com" target="_blank" rel="noreferrer">vgm_rox@hotmail.com</a>
           </div>
         </div>
 

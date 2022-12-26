@@ -14,7 +14,7 @@ const Projects = () => {
       id: 1,
       title: 'Exploration Getaways',
       subtitle: 'Trip Agency application - 2022',
-      description: 'This was the final project for Microverse\'s second module (JavaScript). It is a Pokedéx based on PokeAPI, where the user can look for all the existent Pokémons and their respective stats. Built with plain HTML, CSS and JavaScript',
+      description: 'Exploration Getaways is a travelling application where the user can register new accounts, login and book a set of different trip packages. It is built and connected by using two different repos, including back-end(Rails) and front-end(React/Redux)',
       image: image4,
       live: 'https://exploration-getaways.netlify.app/',
       github: 'https://github.com/VitorGuedesMadeira/Exploration-Getaways-FRONTEND',
