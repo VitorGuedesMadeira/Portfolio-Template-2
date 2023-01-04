@@ -77,6 +77,15 @@
   font-size: 75%;
 }
 
+.testimonial-flex {
+  display: flex;
+}
+
+.quotes {
+  width: 10rem;
+  color: goldenrod;
+}
+
 @media (min-width: 480px) {
 }
 
