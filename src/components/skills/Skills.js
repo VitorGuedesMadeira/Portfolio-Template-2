@@ -29,6 +29,10 @@ const Skills = () => {
           <div className="skills-box">
             <ul>
               <li>
+                <img className="skill-icon" src={icon15} alt="skill-icon" />
+                <p>HTML</p>
+              </li>
+              <li>
                 <img className="skill-icon" src={icon1} alt="skill-icon" />
                 <p>JavaScript</p>
               </li>
@@ -37,8 +41,16 @@ const Skills = () => {
                 <p>React</p>
               </li>
               <li>
+                <img className="skill-icon" src={icon11} alt="skill-icon" />
+                <p>Redux</p>
+              </li>
+              <li>
                 <img className="skill-icon" src={icon3} alt="skill-icon" />
                 <p>Ruby</p>
+              </li>
+              <li>
+                <img className="skill-icon" src={icon10} alt="skill-icon" />
+                <p>Rails</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon4} alt="skill-icon" />
@@ -53,24 +65,12 @@ const Skills = () => {
                 <p>Node JS</p>
               </li>
               <li>
-                <img className="skill-icon" src={icon7} alt="skill-icon" />
-                <p>Photoshop</p>
-              </li>
-              <li>
                 <img className="skill-icon" src={icon8} alt="skill-icon" />
                 <p>PosgreSQL</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon9} alt="skill-icon" />
                 <p>VSCode</p>
-              </li>
-              <li>
-                <img className="skill-icon" src={icon10} alt="skill-icon" />
-                <p>Rails</p>
-              </li>
-              <li>
-                <img className="skill-icon" src={icon11} alt="skill-icon" />
-                <p>Redux</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon12} alt="skill-icon" />
@@ -85,8 +85,8 @@ const Skills = () => {
                 <p>Github</p>
               </li>
               <li>
-                <img className="skill-icon" src={icon15} alt="skill-icon" />
-                <p>HTML</p>
+                <img className="skill-icon" src={icon7} alt="skill-icon" />
+                <p>Photoshop</p>
               </li>
             </ul>
           </div>
