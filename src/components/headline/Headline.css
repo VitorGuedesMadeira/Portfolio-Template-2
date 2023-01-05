@@ -37,12 +37,16 @@
   font-size: 2.3rem;
   font-weight: 700;
   padding-top: 0.5rem;
+  font-family: var(--font-6);
+  letter-spacing: 0.1rem;
 }
 
 .headline-information p:nth-child(3) {
   color: goldenrod; 
   font-size: 1.5rem;
   font-weight: 500;
+  font-family: var(--font-6);
+  letter-spacing: 0.1rem;
 }
 
 .headline-information p:nth-child(4) {
@@ -140,13 +144,15 @@
 
 @media (min-width: 768px) {
   .headline-texts {
-    gap: 1.5rem;
+    gap: 0.75rem;
   }
 
   .headline-section-container {
     background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
     font-size: 120%;
     align-items: center;
+    animation: saw 0.25s;
+    animation-delay: 25s;
   }
 
   .headline-information {
@@ -174,6 +180,20 @@
   .headline-icons a {
     color: white;
     transition: 0.5s;
+  }
+}
+
+@keyframes saw {
+  0% {
+    background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
+  }
+
+  50% {
+    background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/saw.jpg);
+  }
+
+  100% {
+    background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
   }
 }
 

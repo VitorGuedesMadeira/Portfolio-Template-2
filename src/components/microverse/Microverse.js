@@ -7,7 +7,7 @@ import vscode1 from '../../assets/images/vscode1.png'
 const Microverse = () => {
     return (
       <section className="microverse-section-container">
-        <div className="microverse-information">
+        <div className="microverse-information" data-aos="fade-right">
           <div className="microverse-title">
             <FaLocationArrow className="arrow-icon" />
             <span>Education</span>

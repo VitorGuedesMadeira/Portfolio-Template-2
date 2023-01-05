@@ -104,6 +104,11 @@ nav {
     font-size: 50%;
   }
 
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+  }
+
   .hamburger-menu.on div:nth-child(1) {
     rotate: 45deg;
   }

@@ -11,13 +11,16 @@ import Testimonials from './components/testimonials/Testimonials';
 import { useEffect, useState } from 'react';
 import loadingGif from './assets/gifs/logoGif2.gif'
 import "swiper/css/bundle";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setIsLoading(true), 3000)
- })
+    AOS.init();
+ }, [])
 
   return (
     <>

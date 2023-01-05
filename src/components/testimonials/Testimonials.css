@@ -10,6 +10,8 @@
 .testimonials-title {
   color: white;
   font-size: 2rem;
+  font-family: var(--font-6);
+  letter-spacing: 0.1rem;
 }
 
 .swiper {
@@ -40,6 +42,19 @@
   align-items: center;
   padding: 1rem;
   height: fit-content;
+}
+
+.relative-div {
+  position: relative;
+}
+
+.linkedin-testimonial {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--color-1);
+  border-radius: 25px;
+  font-size: 2rem;
 }
 
 .swiper-slide img {
@@ -75,6 +90,15 @@
   font-size: 75%;
 }
 
+.testimonial-flex {
+  display: flex;
+}
+
+.quotes {
+  width: 10rem;
+  color: goldenrod;
+}
+
 @media (min-width: 480px) {
 }
 
@@ -97,6 +121,10 @@
   }
 
   .user-testimonial {
+    font-size: 75%;
+  }
+
+  .arrow-icon {
     font-size: 75%;
   }
 }

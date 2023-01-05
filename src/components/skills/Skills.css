@@ -28,28 +28,22 @@
   width: 100%;
 }
 
-.skills-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;  border-radius: 1rem;
-  border: 1px solid #6f23ff;
-  background-image: url(../../assets/images/texture1.png), linear-gradient(#6f23ff40, #7023ff40, #4b2a88b7);
-  width: fit-content;
-}
-
 .skills-box ul {
-  padding: 1rem;
   display: grid;
+  min-width: 360px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  padding: 3rem;
+  padding-top: 0;
+  padding-bottom: 7rem;
   gap: 0.5rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  column-gap: 0.5rem;
 }
 
 .skills-box ul li {
   height: 100%;
   aspect-ratio: 1 / 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #7023ff40;
@@ -57,45 +51,91 @@
   font-size: 75%;
   border-radius: 1rem;
   position: relative;
-  overflow: hidden;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  color: #6f23ff;
+  font-family: var(--font-6);
 }
 
 .skills-box ul li:hover {
   background-color: #7023ff20;
+  color: goldenrod;
+}
+
+.skills-box ul li:hover .skill-icon {
+  transform: scale(1.1);
 }
 
 .skill-icon {
-  width: 5rem;
-}
-
-.skill-name {
-  position: absolute;
-  background-color: #4e239ed9;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
   transition: 0.5s;
+  width: 4rem;
 }
 
-.skill-name:hover {
-  opacity: 1;
+@media (min-width: 400px) {
+  .skills-box ul {
+    padding-bottom: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
   .skills-section-container {
     font-size: 120%;
   }
+
+  .skills-box ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .skills-box ul li {
+    padding: 0.5rem;
+  }
+
+  .skills-box ul li:nth-child(even) {
+    animation: bright1 5s infinite ease-in-out;
+  }
+
+  .skills-box ul li:nth-child(odd) {
+    animation: bright2 5s infinite ease-in-out;
+    animation-delay: 2.5s;
+  }
+}
+
+@keyframes bright1 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+    background-color: #7023ff25;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bright2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+    background-color: #7023ff25;
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 1024px) {
   .skills-section-container {
     font-size: 140%;
+  }
+
+  .skills-box ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 

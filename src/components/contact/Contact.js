@@ -7,7 +7,7 @@ const Contact = () => {
     return (
       <section id="contact" className="contact-section-container">
         <div className="contact-column">
-          <div className="contact-information">
+          <div className="contact-information" data-aos="fade-right">
             <div className="about-title">
               <FaLocationArrow className="arrow-icon" />
               <span>Get In Touch</span>
@@ -15,7 +15,7 @@ const Contact = () => {
             <p>If you want to work together on a project or just have a chat, please don't hesitate to contact me via email below.</p>
             <a class="email-link" href="mailto:vgm_rox@hotmail.com" target="_blank" rel="noreferrer">Say Hello</a>
           </div>
-          <div className="relative">
+          <div className="relative" data-aos="fade-left">
             <img className="dark-phone" src={darkiphone1} alt="iPhone" />
             <img className="dark-phone phone-animation" src={darkiphone2} alt="iPhone" />
           </div>

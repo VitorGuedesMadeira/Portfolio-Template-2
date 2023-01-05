@@ -8,10 +8,10 @@
 }
 
 .microverse-logo {
-  bottom: 11rem;
+  bottom: 10rem;
   left: 5rem;
   position: absolute;
-  width: 6rem;
+  width: 5rem;
   border-radius: 30px;
   box-shadow:
     0 0 5px #6f23ff,
@@ -27,7 +27,7 @@
   position: absolute;
   left: 0;
   bottom: 1rem;
-  width: 15rem;
+  width: 12rem;
   z-index: 0;
 }
 
@@ -35,7 +35,7 @@
   position: absolute;
   right: -1rem;
   bottom: 1rem;
-  width: 15rem;
+  width: 12rem;
   z-index: 0;
   opacity: 0.15;
 }
@@ -49,6 +49,8 @@
 
 .microverse-title span {
   font-size: 2rem;
+  font-family: var(--font-6);
+  letter-spacing: 0.1rem;
 }
 
 .microverse-date {
@@ -110,7 +112,6 @@
 
 @media (min-width: 480px) {
   .microverse-logo {
-    bottom: 12rem;
     left: unset;
     right: 4rem;
     z-index: 0;
@@ -141,11 +142,13 @@
   }
 
   .microverse-logo {
-    width: 7rem;
+    bottom: 15rem;
+    right: 8rem;
+    width: 6rem;
   }
 
   .hand {
-    width: 15rem;
+    width: 20rem;
   }
 
   .vscode1 {
@@ -160,13 +163,13 @@
 
   .microverse-logo {
     bottom: 20rem;
-    right: 10rem;
+    right: 11rem;
     width: 7rem;
   }
 
   .hand {
     bottom: 1rem;
-    width: 25rem;
+    width: 28rem;
   }
 }
 
