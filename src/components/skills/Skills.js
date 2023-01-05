@@ -23,39 +23,63 @@ const Skills = () => {
             <ul>
               <li>
                 <img className="skill-icon" src={icon1} alt="skill-icon" />
-                <p className="skill-name">JavaScript</p>
+                <p>JavaScript</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon2} alt="skill-icon" />
-                <p className="skill-name">React</p>
+                <p>React</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon3} alt="skill-icon" />
-                <p className="skill-name">Ruby</p>
+                <p>Ruby</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon4} alt="skill-icon" />
-                <p className="skill-name">Bootstrap</p>
+                <p>Bootstrap</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon5} alt="skill-icon" />
-                <p className="skill-name">Tailwind</p>
+                <p>Tailwind</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon6} alt="skill-icon" />
-                <p className="skill-name">Node JS</p>
+                <p>Node JS</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon7} alt="skill-icon" />
-                <p className="skill-name">Photoshop</p>
+                <p>Photoshop</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon8} alt="skill-icon" />
-                <p className="skill-name">PosgreSQL</p>
+                <p>PosgreSQL</p>
               </li>
               <li>
                 <img className="skill-icon" src={icon9} alt="skill-icon" />
-                <p className="skill-name">VSCode</p>
+                <p>VSCode</p>
+              </li>
+              <li>
+                <img className="skill-icon" src={icon7} alt="skill-icon" />
+                <p>Photoshop</p>
+              </li>
+              <li>
+                <img className="skill-icon" src={icon8} alt="skill-icon" />
+                <p>PosgreSQL</p>
+              </li>
+              <li>
+                <img className="skill-icon" src={icon9} alt="skill-icon" />
+                <p>VSCode</p>
+              </li>
+              <li>
+                <img className="skill-icon" src={icon7} alt="skill-icon" />
+                <p>Photoshop</p>
+              </li>
+              <li>
+                <img className="skill-icon" src={icon8} alt="skill-icon" />
+                <p>PosgreSQL</p>
+              </li>
+              <li>
+                <img className="skill-icon" src={icon9} alt="skill-icon" />
+                <p>VSCode</p>
               </li>
             </ul>
           </div>
