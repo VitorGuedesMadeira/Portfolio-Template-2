@@ -44,6 +44,19 @@
   height: fit-content;
 }
 
+.relative-div {
+  position: relative;
+}
+
+.linkedin-testimonial {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--color-1);
+  border-radius: 25px;
+  font-size: 2rem;
+}
+
 .swiper-slide img {
   display: block;
   width: 8rem;

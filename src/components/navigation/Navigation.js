@@ -13,7 +13,7 @@ const Navigation = () => {
     return (
       <nav>
         <div className="flex-row">
-          <img className="logo" src={myLogo} alt="logo" />
+          <a href="#headline"><img className="logo" src={myLogo} alt="logo" /></a>
           <div className="contact-info">
             <FaPhone />
             <a href="https://api.whatsapp.com/send?phone=5551985615374" target="_blank" rel="noreferrer">+55 51 985615374</a>

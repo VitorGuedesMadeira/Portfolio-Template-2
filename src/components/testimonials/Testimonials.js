@@ -1,4 +1,4 @@
-import { FaLocationArrow, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { FaLocationArrow, FaQuoteLeft, FaQuoteRight, FaLinkedin } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Mousewheel, Autoplay } from "swiper";
 import nyamePicture from "../../assets/testimonials/nyameTestimonial.jpg"
@@ -118,7 +118,10 @@ const Testimonials = () => {
           >
             {linkedinTestimonials.map((user) => 
               <SwiperSlide key={user.id}>
-                <img src={user.image} alt="user" />
+                <div className="relative-div">
+                  <img src={user.image} alt="user" />
+                  <FaLinkedin className="linkedin-testimonial" />
+                </div>
                 <div className="testimonial-info">
                   <p className="user-name">{user.name}</p>
                   <p className="user-role">{user.role}</p>
