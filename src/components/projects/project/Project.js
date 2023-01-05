@@ -33,7 +33,7 @@ const Project = (props) => {
                 )}
               </ul>
               </p>
-                <button className="read-more" onClick={toggleReadMore}>Read more</button>
+                <button className="read-more" onClick={toggleReadMore}>{isReadMoreActive ? "Read Less" : "Read More"}</button>
               </div>
               <div className="project-modal-buttons">
                 <a href={props.project.live} className="project-modal-button" target="_blank" rel="noreferrer">Live</a>
