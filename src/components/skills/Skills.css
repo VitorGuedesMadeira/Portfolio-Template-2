@@ -53,6 +53,7 @@
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   color: #6f23ff;
   font-family: var(--font-6);
+  transition-duration: 0.5s;
 }
 
 .skills-box ul li:hover {

@@ -8,6 +8,13 @@ import icon6 from '../../assets/icons/node.png'
 import icon7 from '../../assets/icons/photoshop.png'
 import icon8 from '../../assets/icons/postgresql.png'
 import icon9 from '../../assets/icons/vscode.png'
+import icon10 from '../../assets/icons/rails.png'
+import icon11 from '../../assets/icons/redux.png'
+import icon12 from '../../assets/icons/netlify.png'
+import icon13 from '../../assets/icons/webpack.png'
+import icon14 from '../../assets/icons/github.png'
+import icon15 from '../../assets/icons/html.png'
+
 import './Skills.css';
 
 const Skills = () => {
@@ -58,28 +65,28 @@ const Skills = () => {
                 <p>VSCode</p>
               </li>
               <li>
-                <img className="skill-icon" src={icon7} alt="skill-icon" />
-                <p>Photoshop</p>
+                <img className="skill-icon" src={icon10} alt="skill-icon" />
+                <p>Rails</p>
               </li>
               <li>
-                <img className="skill-icon" src={icon8} alt="skill-icon" />
-                <p>PosgreSQL</p>
+                <img className="skill-icon" src={icon11} alt="skill-icon" />
+                <p>Redux</p>
               </li>
               <li>
-                <img className="skill-icon" src={icon9} alt="skill-icon" />
-                <p>VSCode</p>
+                <img className="skill-icon" src={icon12} alt="skill-icon" />
+                <p>Netlify</p>
               </li>
               <li>
-                <img className="skill-icon" src={icon7} alt="skill-icon" />
-                <p>Photoshop</p>
+                <img className="skill-icon" src={icon13} alt="skill-icon" />
+                <p>Webpack</p>
               </li>
               <li>
-                <img className="skill-icon" src={icon8} alt="skill-icon" />
-                <p>PosgreSQL</p>
+                <img className="skill-icon" src={icon14} alt="skill-icon" />
+                <p>Github</p>
               </li>
               <li>
-                <img className="skill-icon" src={icon9} alt="skill-icon" />
-                <p>VSCode</p>
+                <img className="skill-icon" src={icon15} alt="skill-icon" />
+                <p>HTML</p>
               </li>
             </ul>
           </div>
