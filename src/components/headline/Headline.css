@@ -151,6 +151,8 @@
     background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
     font-size: 120%;
     align-items: center;
+    animation: saw 0.25s;
+    animation-delay: 25s;
   }
 
   .headline-information {
@@ -178,6 +180,20 @@
   .headline-icons a {
     color: white;
     transition: 0.5s;
+  }
+}
+
+@keyframes saw {
+  0% {
+    background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
+  }
+
+  50% {
+    background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/saw.jpg);
+  }
+
+  100% {
+    background-image:  linear-gradient(to top, black, transparent 10%), url(../../assets/images/backgroundMobile4.jpg);
   }
 }
 
