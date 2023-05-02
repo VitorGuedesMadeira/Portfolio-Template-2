@@ -10,6 +10,7 @@ nav {
   left: -5px;
   padding: 0 2rem;
   z-index: 5;
+  font-family: 'Roboto';
 }
 
 .logo {
@@ -101,7 +102,7 @@ nav {
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    font-size: 50%;
+    font-size: 0.75rem;
   }
 
   .contact-info a {

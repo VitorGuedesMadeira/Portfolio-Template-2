@@ -35,16 +35,16 @@ const Headline = () => {
             </a>
           </div>
           <div className="contact-button">
-            <a href="mailto:vgm_rox@hotmail.com" target="_blank" rel="noreferrer">
+            <a href="mailto:vitorguedesmadeira@hotmail.com" target="_blank" rel="noreferrer">
             <FaEnvelope />
             Email
             </a>
           </div>
           <div className="contact-button">
-          <a href="https://medium.com/@vitorguedesmadeira/you-teach-you-learn-6f5ac50aae65" target="_blank" rel="noreferrer"><FaMedium />Articles</a>
+          <a href="https://medium.com/@vitorguedesmadeira/" target="_blank" rel="noreferrer"><FaMedium />Articles</a>
           </div>
           <div className="contact-button">
-            <a href="https://docs.google.com/document/d/1LbPa1ridPgLK8a7S7N86yOm4bRhlgkTKyYPqqfxeKbI/edit" target="_blank" rel="noreferrer">
+            <a href="https://docs.google.com/document/d/1AZnLzjk0vneeyUN9ZEdQCNqd-VKjJXQFHn5gMzvyryI/edit?usp=sharing" target="_blank" rel="noreferrer">
             <FaPaperclip />
             Resume</a>
           </div>

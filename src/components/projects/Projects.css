@@ -21,6 +21,10 @@
   gap: 5rem;
 }
 
+.check-more-button {
+  
+}
+
 @media (min-width: 480px) {
   .main-projects {
     display: flex;

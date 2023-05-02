@@ -22,13 +22,13 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Marvel Characters',
-      subtitle: 'Marvel Comics API - 2022',
-      description: 'This was the final project for Microverse\'s third module (React/Redux). It is based on the official MARVEL API and it displays every existent character and it\'s respective comics. Built with React/Redux (Redux ToolKit)',
-      image: image2,
-      live: 'https://capstone-react-vitorguedesmadeira.netlify.app/',
-      github: 'https://github.com/VitorGuedesMadeira/Capstone-React',
-      skills: ['HTML', 'CSS', 'React', 'Redux'],
+      title: 'Shoe Store',
+      subtitle: 'e-commerce application - 2023',
+      description: 'Shoes Store is an e-commerece application where the customer can register new accounts, login, add shoes to the shopping cart and buy it. The admin user can login and add new products to the inventory and check analytics related to the customers and products. It is built as a single repo application, by integrating backend and frontend with RAILS.',
+      image: image6,
+      live: 'https://vt-shoe-store.herokuapp.com/',
+      github: 'https://github.com/VitorGuedesMadeira/Shoes-Store',
+      skills: ['Ruby', 'Rails', 'JavaScript', 'AWS'],
     },
     {
       id: 3,
@@ -52,6 +52,16 @@ const Projects = () => {
     },
     {
       id: 5,
+      title: 'Marvel Characters',
+      subtitle: 'Marvel Comics API - 2022',
+      description: 'This was the final project for Microverse\'s third module (React/Redux). It is based on the official MARVEL API and it displays every existent character and it\'s respective comics. Built with React/Redux (Redux ToolKit)',
+      image: image2,
+      live: 'https://capstone-react-vitorguedesmadeira.netlify.app/',
+      github: 'https://github.com/VitorGuedesMadeira/Capstone-React',
+      skills: ['HTML', 'CSS', 'React', 'Redux'],
+    },
+    {
+      id: 6,
       title: 'Space Traveler',
       subtitle: 'Rockets/Mission application - 2022',
       description: 'This project is a web application that consumes an SpaceX API. It provides commercial and scientific space travel services that allows users to book rockets and join selected space missions. Built with React/Redux (Redux ToolKit)',
@@ -59,16 +69,6 @@ const Projects = () => {
       live: 'https://spacetraveler-guedeskatana.netlify.app/',
       github: 'https://github.com/VitorGuedesMadeira/Space-Traveler',
       skills: ['HTML', 'CSS', 'React', 'Redux'],
-    },
-    {
-      id: 6,
-      title: 'Leaderboard',
-      subtitle: 'Scores application - 2022',
-      description: 'This is a project based on a game Leaderboard. You can interact with an API inserting your user name and score. Built with HTML, CSS, JavaScript and WEBPACK',
-      image: image6,
-      live: 'https://vitorguedesmadeira.github.io/Leaderboard/dist/',
-      github: 'https://github.com/VitorGuedesMadeira/Leaderboard',
-      skills: ['HTML', 'CSS', 'JavaScript', 'WebPack'],
     },
   ]
 
@@ -85,6 +85,8 @@ const Projects = () => {
               <Project project={project} />
             )}
           </div>
+
+          <a className="email-link" href="https://github.com/VitorGuedesMadeira?tab=repositories" target="_blank" rel="noreferrer">Check More Projects</a>
         </div>
       </section>
     );
